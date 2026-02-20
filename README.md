@@ -1,107 +1,92 @@
-# WildfireGuard AI
+# Realtime Fire Detection Platform 🔥☁️
 
-**Real-time forest fire detection using AI, deep learning, and cloud technology.**
+**Cloud-ready real-time wildfire detection platform built with CNNs, Python, TensorFlow, and OpenCV.**
 
-WildfireGuard AI is a lightweight, real-time forest fire detection system powered by Convolutional Neural Networks (CNNs). Designed for deployment on edge devices such as Raspberry Pi and drones, it detects wildfires from images with high accuracy and sends alerts through cloud-connected channels. Built with Python, TensorFlow, and OpenCV, the system is scalable, responsive, and focused on protecting the environment.
+This project demonstrates a scalable real-time fire detection system designed with a cloud-first engineering approach. It processes image streams, performs high-performance inference using deep learning, and triggers automated alerts through cloud-connected services.  
 
----
-
-## Objectives
-
-- Detect forest fires from static images or live video feeds using CNNs  
-- Enable real-time alerts to authorities for early intervention  
-- Store and access incident data via cloud infrastructure  
-- Provide a cost-effective, deployable solution for wildfire-prone areas  
-
----
-## Features
-
-- AI-powered fire vs. non-fire image classification  
-- Cloud-ready architecture for scalable deployment  
-- Real-time SMS or API-based alert system  
-- Over 96% classification accuracy  
-- Compatible with edge devices: Raspberry Pi, drones, webcams  
+The platform showcases concepts relevant to Cloud Engineering and Site Reliability, including **real-time pipelines, operational monitoring, edge deployment, and scalable architecture**.
 
 ---
 
-## Tech Stack
+## 🚀 Overview
 
-| Component           | Technology                          |
-|---------------------|--------------------------------------|
-| Language            | Python 3.6+                          |
-| Deep Learning       | TensorFlow, Keras                    |
-| Computer Vision     | OpenCV, Pillow                       |
-| Edge Deployment     | Raspberry Pi, USB Cameras, Drones    |
-| Cloud Integration   | Firebase, MQTT, Google Cloud (Planned) |
+The Realtime Fire Detection Platform detects wildfire events from images or live video feeds using Convolutional Neural Networks (CNNs). It is designed for deployment on edge devices such as Raspberry Pi or drones while integrating with cloud infrastructure for alerting, monitoring, and future analytics workflows.
 
 ---
 
-## Dataset
+## ⚡ Key Features
 
-- **Source**: [Kaggle Forest Fire Dataset](https://www.kaggle.com/)
-- **Size**: Approximately 350 images (balanced between fire and non-fire)
-- **Preprocessing**:
-  - Images resized to 200×200 pixels
-  - Normalized pixel values
-  - Labels one-hot encoded
-
----
-
-## Model Performance
-
-- **Architecture**: 2 convolutional layers → 2 max pooling layers → Flatten → Dense → Softmax
-- **Accuracy**: Over 96% on test data
-- **Validation Loss**: Below 0.05
+- Real-time fire vs non-fire image classification  
+- Cloud-ready and scalable architecture  
+- Automated alerting via API or SMS workflows  
+- ~96% model accuracy on validation data  
+- Compatible with edge environments (Raspberry Pi, drones, webcams)  
+- Designed to demonstrate operational reliability and monitoring concepts  
 
 ---
 
-## Future Enhancements
+## 🧱 Architecture
 
-- Real-time detection from video streams
-- Drone and thermal camera integration
-- Interactive web dashboard with fire maps
-- Mobile app for monitoring and reporting
-- Cloud-based historical logging and fire analysis
+The platform follows a hybrid **edge + cloud** architecture:
 
----
-
-## Use Cases
-
-- Wildfire early warning and mitigation systems
-- Drone-based forest and wildlife reserve monitoring
-- Environmental and climate change surveillance
-- Academic research in AI for natural disaster response
+- Edge devices capture and process images  
+- CNN model performs inference locally or via cloud services  
+- Detection events trigger alert pipelines and logging  
+- Cloud services enable scalability, monitoring, and future analytics
 
 ---
 
-## Author
+## 🛠 Tech Stack
 
-**Harisudhan Veerasamy**  
-M.Sc. in Computing (Cloud Technologies)  
-[LinkedIn](https://www.linkedin.com/in/your-profile)  
-[GitHub](https://github.com/your-username)
-
----
-
-## License
-
-This project is licensed under the MIT License.  
-Feel free to use, modify, and distribute with attribution.
+| Layer | Technology |
+|---|---|
+| Language | Python |
+| Deep Learning | TensorFlow, Keras |
+| Computer Vision | OpenCV, Pillow |
+| Edge Deployment | Raspberry Pi, USB Cameras, Drones |
+| Cloud Integration | Firebase, MQTT, Google Cloud (Planned) |
 
 ---
 
-## Support
+## 📊 Dataset
 
-If you found this project helpful:
-- Star this repository ⭐
-- Share it on LinkedIn 📢
-- Contribute or open an issue 🤝
+- Source: Kaggle Forest Fire Dataset  
+- ~350 labelled images (fire / non-fire)  
+- Preprocessing:
+  - Resized to 200×200 pixels  
+  - Normalised pixel values  
+  - One-hot encoded labels  
+
 ---
 
-## 👨‍💻 Author
+## 🤖 Model Performance
 
-**Harisudhan Veerasamy**  
-M.Sc. in Computing (Cloud Technology) & DevOps engineer
-[[LinkedIn](https://www.linkedin.com/in/harisudhan-veerasamy-9257b1289/)
+- Architecture: Conv2D → MaxPooling → Dense → Softmax  
+- Accuracy: ~96% on test data  
+- Validation Loss: < 0.05  
 
+---
 
+## 🔮 Future Enhancements
+
+- Real-time video stream inference pipelines  
+- Cloud monitoring dashboard and incident logging  
+- Drone + thermal imaging integration  
+- Scalable alert orchestration workflows  
+
+---
+
+## 🌍 Use Cases
+
+- Wildfire early warning systems  
+- Environmental monitoring platforms  
+- Edge AI deployments for disaster response  
+- Cloud-based operational analytics experiments  
+
+---
+
+## 👤 Author
+
+**Charan Gorentla Ravi**  
+Cloud Operations & Platform Engineering | AWS | Automation | Reliability  
+🔗 https://linkedin.com/in/charan-gr
